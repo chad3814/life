@@ -66,13 +66,13 @@ app.get('/', (req, res) => {
   const html = `<html>
   <head><title>Life</title></head>
   <body>
-    <div style="width: ${life_per}%; background-color: green;">Life</div>
-    <div style="width: ${decade_per}%; background-color: green;">${decade}s</div>
-    <div style="width: ${year_per}%; background-color: green;">${year}</div>
-    <div style="width: ${this_year_per}%; background-color: green;">${this_year}</div>
-    <div style="width: ${this_month_per}%; background-color: green;">${this_month}</div>
-    <div style="width: ${this_week_per}%; background-color: green;">this week</div>
-    <div style="width: ${today_per}%; background-color: green;">today</div>
+    <div style="width: ${life_per}%; background-color: green; color: white;">Life</div>
+    <div style="width: ${decade_per}%; background-color: green; color: white;">${decade}s</div>
+    <div style="width: ${year_per}%; background-color: green; color: white;">${year}</div>
+    <div style="width: ${this_year_per}%; background-color: green; color: white;">${this_year}</div>
+    <div style="width: ${this_month_per}%; background-color: green; color: white;">${this_month}</div>
+    <div style="width: ${this_week_per}%; background-color: green; color: white;">this week</div>
+    <div style="width: ${today_per}%; background-color: green; color: white;">today</div>
   </body>
 </html>`;
   res.end(html);
