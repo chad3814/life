@@ -62,7 +62,7 @@ app.get('/', (req, res) => {
   const this_month_per = 100 * (now.getTime() - month_1.getTime()) / (month_last.getTime() - month_1.getTime());
   const this_month = MONTH_NAMES[now.getUTCMonth()];
   const this_week_per = 100 * (now.getTime() - sunday.getTime()) / (saturday.getTime() - sunday.getTime());
-  const today_per = 100 * (now.getTime() - midnight.getTime()) = (tomorrow.getTime() - midnight.getTime());
+  const today_per = 100 * (now.getTime() - midnight.getTime()) / (tomorrow.getTime() - midnight.getTime());
   const html = `<html>
   <head><title>Life</title></head>
   <body>
