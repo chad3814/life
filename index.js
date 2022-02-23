@@ -80,7 +80,7 @@ app.get('/', (req, res) => {
       <div style="width: ${life_per}%">Life</div>
     </div>
     <div style="background-color: white; border: 1px solid black; margin-bottom: 5px;">
-      <div style="width: ${decade_per}%">${decade}s</div>
+      <div style="width: ${decade_per}%">${decade}0s</div>
     </div>
     <div style="background-color: white; border: 1px solid black; margin-bottom: 5px;">
       <div style="width: ${year_per}%">${year}</div>
