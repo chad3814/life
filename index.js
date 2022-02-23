@@ -73,29 +73,32 @@ app.get('/', (req, res) => {
         padding: 0;
         margin: 0;
       }
+      span {
+        float: right;
+      }
     </style>
   </head>
   <body>
     <div style="background-color: white; border: 1px solid black; margin-bottom: 5px;">
-      <div style="width: ${life_per}%">Life</div>
+      <div style="width: ${life_per}%"><span>${Math.round(life_per * 100) / 100}%</span>Life</div>
     </div>
     <div style="background-color: white; border: 1px solid black; margin-bottom: 5px;">
-      <div style="width: ${decade_per}%">${decade}0s</div>
+      <div style="width: ${decade_per}%"><span>${Math.round(decade_per * 100) / 100}%</span>${decade}0s</div>
     </div>
     <div style="background-color: white; border: 1px solid black; margin-bottom: 5px;">
-      <div style="width: ${year_per}%">${year}</div>
+      <div style="width: ${year_per}%"><span>${Math.round(year_per * 100) / 100}%</span>${year}</div>
     </div>
     <div style="background-color: white; border: 1px solid black; margin-bottom: 5px;">
-      <div style="width: ${this_year_per}%">${this_year}</div>
+      <div style="width: ${this_year_per}%"><span>${Math.round(this_year_per * 100) / 100}%</span>${this_year}</div>
     </div>
     <div style="background-color: white; border: 1px solid black; margin-bottom: 5px;">
-      <div style="width: ${this_month_per}%">${this_month}</div>
+      <div style="width: ${this_month_per}%"><span>${Math.round(this_month_per * 100) / 100}%</span>${this_month}</div>
     </div>
     <div style="background-color: white; border: 1px solid black; margin-bottom: 5px;">
-      <div style="width: ${this_week_per}%">this week</div>
+      <div style="width: ${this_week_per}%"><span>${Math.round(this_week_per * 100) / 100}%</span>this week</div>
     </div>
     <div style="background-color: white; border: 1px solid black; margin-bottom: 5px;">
-      <div style="width: ${today_per}%">today</div>
+      <div style="width: ${today_per}%"><span>${Math.round(today_per * 100) / 100}%</span>today</div>
     </div>
   </body>
 </html>`;
