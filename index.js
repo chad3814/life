@@ -76,27 +76,27 @@ app.get('/', (req, res) => {
     </style>
   </head>
   <body>
-    <div style="background-color: white; border: 1px black; margin-bottom: 1px;">
+    <div style="background-color: white; border: 1px solid black; margin-bottom: 5px;">
       <div style="width: ${life_per}%">Life</div>
-      </div>
-      <div style="background-color: white; border: 1px black; margin-bottom: 1px;">
-        <div style="width: ${decade_per}%">${decade}s</div>
-      </div>
-      <div style="background-color: white; border: 1px black; margin-bottom: 1px;">
-        <div style="width: ${year_per}%">${year}</div>
-      </div>
-      <div style="background-color: white; border: 1px black; margin-bottom: 1px;">
-        <div style="width: ${this_year_per}%">${this_year}</div>
-      </div>
-      <div style="background-color: white; border: 1px black; margin-bottom: 1px;">
-        <div style="width: ${this_month_per}%">${this_month}</div>
-      </div>
-      <div style="background-color: white; border: 1px black; margin-bottom: 1px;">
-        <div style="width: ${this_week_per}%">this week</div>
-      </div>
-      <div style="background-color: white; border: 1px black; margin-bottom: 1px;">
-        <div style="width: ${today_per}%">today</div>
-      </div>
+    </div>
+    <div style="background-color: white; border: 1px solid black; margin-bottom: 5px;">
+      <div style="width: ${decade_per}%">${decade}s</div>
+    </div>
+    <div style="background-color: white; border: 1px solid black; margin-bottom: 5px;">
+      <div style="width: ${year_per}%">${year}</div>
+    </div>
+    <div style="background-color: white; border: 1px solid black; margin-bottom: 5px;">
+      <div style="width: ${this_year_per}%">${this_year}</div>
+    </div>
+    <div style="background-color: white; border: 1px solid black; margin-bottom: 5px;">
+      <div style="width: ${this_month_per}%">${this_month}</div>
+    </div>
+    <div style="background-color: white; border: 1px solid black; margin-bottom: 5px;">
+      <div style="width: ${this_week_per}%">this week</div>
+    </div>
+    <div style="background-color: white; border: 1px solid black; margin-bottom: 5px;">
+      <div style="width: ${today_per}%">today</div>
+    </div>
   </body>
 </html>`;
   res.end(html);
